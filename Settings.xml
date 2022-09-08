@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+	<Application>
+		<Name>Monitor-HFS</Name>
+		<Version>1.0.0</Version>
+		<Date>September 8, 2022</Date>
+		<Author>Johan Cyprich</Author>
+		<AuthorContact>jcyprich@live.com</AuthorContact>
+		<Legal>
+			<Copyright></Copyright>
+			<License>Licensed under The MIT License (MIT).</License>
+		</Legal>
+	</Application>
+
+	<MailServer>
+		<SMTP>smtp.website.com</SMTP>
+		<User>admin@website.com</User>
+		<Password></Password>
+		<Authenticate>False</Authenticate>
+	</MailServer>
+
+	<!-- Status="Active" (user will receive emails) -->
+	<!-- Status="Inactive" (user will not receive emails) -->
+	<Emails>
+		<Email Name="Admin" Status="Active">admin@gmail.com</Email>
+	</Emails>
+
+	<!-- Status="Active" (website will be scanned) -->
+	<!-- Status="Inactive" (website will not be scanned) -->
+	<FileServers>
+		<FileServer URL="http://192.168.147.1/IPPH_server/" Status="Active">ipph</FileServer>>
+	</FileServers>
+</Settings>
