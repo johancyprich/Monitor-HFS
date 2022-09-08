@@ -1,0 +1,29 @@
+<h1>Cirrus.PowerShell.Toolkit</h1>
+
+<p>
+  Version: 1.0.0<br />
+  Date: June 9, 2015<br />
+  Author: Johan Cyprich<br />
+  Author Email: jcyprich@live.com<br />
+  License: The MIT License (MIT)
+</p>
+
+<h2>SUMMARY</h2>
+
+<p>PowerShell function to send mail with an option for authentication. If you do not want to authentication, leave $sAuthUserName and $AuthPassword as empty strings.</p>
+
+<h2>FUNCTIONS</h2>
+
+<p><b>function SendMail</b> ([string] $sHost, [string] $sFrom, [string] $sTo, [string] $sSubject, [string] $sMessage, [string] $sAuthUserName, [string] $sAuthPassword)</p>
+
+<p>
+  <b>$sHost</b> - Host name of mail server.<br />
+  <b>$sFrom</b> - E-mail address of mail sender.<br />
+  <b>$sTo</b> - E-mail address of mail recipient.<br />
+  <b>$sSubject</b> - Subject title of message.<br />
+  <b>$sMessage</b> - Message sent to recipient.<br />
+  <b>$sAuthUserName</b> - User name for authentication.<br />
+  <b>$sAuthPassword</b> - Password for authentication.
+</p>
+
+<p>Returns True if mail was sent successfully, False otherwise.</p>
